@@ -4,7 +4,7 @@ const passportLocalMongoose = require('passport-local-mongoose');
 
 const userSchema = new Schema({
     firstname: {
-        type: String,
+        type: String, 
         default: ''
     },
     lastname: {
@@ -13,6 +13,7 @@ const userSchema = new Schema({
     },
     admin: {
         type: Boolean,
+        facebookId: String,
         default: false
     }
 });
